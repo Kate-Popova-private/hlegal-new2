@@ -1,7 +1,7 @@
 {
   "name": "hlegal-new2",
   "version": "0.1.0",
-  "homepage": "https://kate-popova-private.github.io/hlegal-private",
+  "homepage": "https://kate-popova-private.github.io/hlegal-new2",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
