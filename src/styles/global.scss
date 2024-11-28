@@ -1,0 +1,122 @@
+$main: #323264;
+$accent: #F0145A;
+$regular-blue: #24A3FF;
+$hover-blue: #0085FF;
+$active-blue: #006CCF;
+
+@mixin font($weight: 400, $size: 16px, $height, $color:null) {
+  line-height: $height;
+  color: $color;
+  @if $weight != 400 {
+    font-weight: $weight;
+  }
+  @if $size != 16px {
+    font-size: $size;
+  }
+}
+
+@mixin small-container-mixin {
+  margin: 0 auto;
+  width: 84%;
+}
+
+@mixin middle-container-mixin {
+  margin: 0 auto;
+  width: 84.375%;
+}
+
+@mixin large-container-mixin {
+  margin: 0 auto;
+  width: 88.28125%;
+}
+
+@mixin x-large-container-mixin {
+  margin: 0 auto;
+  width: 91.666666%;
+}
+
+@mixin xx-large-container-mixin {
+  margin: 0 auto;
+  width: 83.333333%;
+}
+
+///////////////////////////////////
+%h2-mobile-gradient-reversed {
+  @include font(700, 30px, 37px);
+  @extend %bg-linear-gradient-reversed;
+}
+
+%h2-regular-gradient-reversed {
+  @include font(700, 38px, 46px);
+  @extend %bg-linear-gradient-reversed;
+}
+
+@mixin h2-mobile-gradient-reversed {
+  @include font(700, 30px, 37px);
+  @include bg-linear-gradient-reversed;
+}
+
+@mixin h2-regular-gradient-reversed {
+  @include font(700, 38px, 46px);
+  @include bg-linear-gradient-reversed;
+}
+
+@mixin double-shadows {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -10px;
+    border-radius: 0 0 12px 12px;
+    background: #CACADB;
+    width: 94.791666%;
+    height: 10px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -20px;
+    border-radius: 0 0 12px 12px;
+    background: #E7E7F2;
+    width: 89.583333%;
+    height: 10px;
+  }
+}
+
+//////////////////////////////////////
+%bg-linear-gradient {
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  //background-clip: text;
+}
+
+%bg-linear-gradient-reversed {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  //background-clip: text;
+}
+
+@mixin bg-linear-gradient {
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  //background-clip: text;
+}
+
+@mixin bg-linear-gradient-reversed {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  //background-clip: text;
+}
+
+/////////////////////////////////////////////////
+

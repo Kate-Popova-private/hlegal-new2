@@ -1,0 +1,63 @@
+{
+  "name": "hlegal-new2",
+  "version": "0.1.0",
+  "homepage": "https://kate-popova-private.github.io/hlegal-private",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "firebase": "^9.17.2",
+    "i18next": "^23.10.1",
+    "i18next-browser-languagedetector": "^7.2.1",
+    "i18next-http-backend": "^2.5.0",
+    "luxon": "^3.4.4",
+    "react": "^18.2.0",
+    "react-content-loader": "^7.0.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.3",
+    "react-i18next": "^14.1.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.9.0",
+    "react-scripts": "^5.0.1",
+    "react-slick": "^0.29.0",
+    "react-swipe": "^6.0.4",
+    "react-transition-group": "^4.4.5",
+    "sass": "^1.59.3",
+    "slick-carousel": "^1.8.1",
+    "swipe-js-iso": "^2.1.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.2.0"
+  }
+}

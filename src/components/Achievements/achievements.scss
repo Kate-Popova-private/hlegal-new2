@@ -1,0 +1,71 @@
+@use "../../styles/global" as *;
+
+.achievements {
+  padding-bottom: 25px;
+  background: #f5f5f5;
+  @media screen and (min-width: 768px) {
+    padding: 0 20px 25px 60px;
+
+
+
+  }
+
+  &__title {
+    text-align: center;
+    padding: 30px 0;
+    letter-spacing: 1px;
+    @include font(700, 14px, 17px, $main);
+    text-transform: uppercase;
+  }
+
+  &__container {
+    padding-bottom: 28px;
+  }
+
+
+  &__content {
+    margin: 0 60px;
+    height: 90px;
+    border-radius: 12px;
+    position: relative;
+    background: #fff;
+    @media screen and (min-width: 768px) {
+      margin: 0 40px 0 0;
+
+
+    }
+  }
+
+
+
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+  }
+}
+
+.slick-dots {
+  background: #F5F5FA;
+  //padding-bottom: 28px;
+}
+
+.slick-dots li button:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  content: '';
+  text-align: center;
+  opacity: .25;
+  background: $active-blue;
+  border-radius: 50%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

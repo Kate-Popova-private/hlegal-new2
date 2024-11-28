@@ -1,0 +1,137 @@
+@use './styles/global' as *;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+.address__link-on-map:hover,
+.phone-number:hover,
+.nav__item:active {
+  color: $accent;
+}
+
+.header__container,
+.hero,
+.advantage__content,
+.services,
+.team-message,
+.publications__wrap,
+.footer__container,
+.service,
+.public-card__wrap,
+.about__container,
+.employees,
+.employee,
+.contact {
+
+  @media screen and (min-width: 375px) {
+    @include small-container-mixin;
+  }
+  @media screen and (min-width: 768px) {
+    @include middle-container-mixin;
+  }
+  @media screen and (min-width: 1024px) {
+    @include large-container-mixin;
+  }
+  @media screen and (min-width: 1440px) {
+    @include x-large-container-mixin;
+  }
+  @media screen and (min-width: 1920px) {
+    @include xx-large-container-mixin;
+  }
+}
+
+.footer__email, .header__phone-number, .service__btn_free, .footer__phone-number, .footer__link-on-map, .address__link-on-map, .nav__item {
+  text-decoration: none;
+}
+
+.bg-container {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 80px;
+  position: relative;
+  @media screen and (min-width: 375px) {
+    margin-top: -110px;
+    padding-top: 110px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: -238px;
+    padding-top: 293px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-top: -130px;
+    padding-top: 195px;
+  }
+}
+
+.background-wrapper {
+  background: url("./assets/img/h_logo.svg") no-repeat top, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0 0 12px 12px;
+  padding-bottom: 30px;
+  position: relative;
+  @media screen and (min-width: 375px) {
+    background-size: 140%, 100%;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 768px) {
+    background-size: 117%, 100%;
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 1024px) {
+    background-size: 65.425781%, 100%;
+  }
+  @media screen and (min-width: 1440px) {
+    background-size: 45%, 100%;
+  }
+  @media screen and (min-width: 1920px) {
+    background-size: 46.5%, 100%;
+  }
+}
+
+.bg-container, .background-wrapper {
+  @include double-shadows;
+}
+
+.social {
+  &__img:hover path {
+    fill: $accent;
+  }
+}
+
+@keyframes img-scale {
+  25% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
+.error-message{
+ margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+  @include font(700, 20px, 24px, #be0707);
+}

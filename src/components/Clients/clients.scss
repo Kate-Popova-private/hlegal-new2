@@ -1,0 +1,48 @@
+@use "../../styles/global" as *;
+
+.clients {
+  text-align: center;
+
+  &__title {
+    @include font(700, 14px, 17px, #323264);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  &__container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1920px) {
+      margin: 0 5.208333% 60px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+  }
+
+  &__item {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+      width: 33.33333333333333%;
+      display: flex;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 25%;
+    }
+  }
+
+  &__item:nth-child(n+7) {
+    display: none;
+  }
+
+  &__item:nth-child(n+7) {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+}

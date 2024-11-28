@@ -1,0 +1,78 @@
+@use "../../styles/global" as *;
+
+.publications {
+  background: #F5F5FA;
+  padding: 30px 0;
+
+  &__container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: stretch;
+    }
+  }
+
+  &__title {
+    @include h2-mobile-gradient-reversed;
+    margin: 5px 0 30px;
+  }
+}
+
+.publication {
+  display: block;
+  background: #FFFFFF;
+  padding-bottom: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    width: 47.685185%;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 31.120943%;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 31.818181%;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 32.083125%;
+  }
+
+  &:last-child:nth-child(2n+1) {
+    flex-grow: 1;
+    @media screen and (min-width: 1024px) {
+      flex-grow: 0;
+    }
+  }
+
+  &__img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    @include font(700, 16px, 20px, $regular-blue);
+    margin-bottom: 15px;
+    padding: 0 30px;
+  }
+
+  &__date {
+    @include font(700, 12px, 15px, #B3B3BA);
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 30px 15px;
+    border-bottom: 4px solid #e6e6f0;
+    display: block;
+  }
+
+  &__shortDesc {
+    @include font(400, 14px, 22px, #000);
+    padding: 0 30px;
+  }
+}

@@ -1,0 +1,73 @@
+@use '../../styles/global' as *
+;
+
+.services {
+  &__container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    @include h2-mobile-gradient-reversed;
+    padding: 10px 0;
+    @media screen and (min-width: 768px) {
+      @include h2-regular-gradient-reversed;
+      padding: 10px 0 60px;
+    }
+  }
+}
+
+
+.service-card {
+  a {
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 45.370370%;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 28%;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 30.303030%;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 30.833125%;
+  }
+
+  &__img-wrap {
+    background: #FFFFFF;
+    border-radius: 24px;
+    width: 92px;
+    height: 92px;
+    position: relative;
+    margin-bottom: 30px;
+    display: inline-block;
+
+    &:hover {
+      animation: img-scale 0.5s ease;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    @include font(700, 22px, 27px, $regular-blue);
+  }
+
+  &__content {
+    @include font(400, 16px, 26px, #FFF);
+    padding-bottom: 30px;
+  }
+}

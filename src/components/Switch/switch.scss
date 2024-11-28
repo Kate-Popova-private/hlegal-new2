@@ -1,0 +1,38 @@
+@use "../../styles/global" as *;
+
+.switch {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #E6E6F0;
+  width: fit-content;
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: none;
+    padding: 8px 30px 10px;
+    margin: 2px;
+    @include font(700, 16px, 20px, $main);
+    border-radius: inherit;
+
+    &:hover {
+      background: $regular-blue;
+      color: #fff;
+    }
+
+    &_active {
+      background: #FFF;
+    }
+  }
+}
+
+.switch__link + .switch__link {
+  margin-left: 0;
+}
+
+.switch__active {
+  background: #fff;
+
+}

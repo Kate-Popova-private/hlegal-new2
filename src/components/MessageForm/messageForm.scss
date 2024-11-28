@@ -1,0 +1,64 @@
+@use '../../styles/global' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__message {
+    height: 130px;
+    outline: unset;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+
+  &__input {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    background: #fff;
+  }
+
+  &__input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    color: rgb(179, 179, 186);
+  }
+
+  &__text {
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #B3B3BA;
+  }
+
+  &__btn-submit {
+    bottom: 30px;
+    text-align: center;
+    background: #24A3FF;
+    box-shadow: 0 0 20px rgba(36, 163, 255, 0.5019607843);
+    font-weight: 700;
+    line-height: 20px;
+    color: #FFF;
+    padding: 18px 0;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+
+    @media screen and (min-width: 768px) {
+      position: static;
+      width: 100%;
+    }
+  }
+
+  &__error {
+    @include font(700, 14px, 20px, red);
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+}

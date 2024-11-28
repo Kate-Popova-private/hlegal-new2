@@ -1,0 +1,45 @@
+@use "../../styles/global" as *;
+
+.breadcrumbs {
+  display: inline-block;
+
+  &__crumb {
+    position: relative;
+    margin-left: 20px;
+    @include font(400px, 20px, 24px, inherit);
+
+    @media screen and (min-width: 768px) {
+      @include font(400px, 36px, 44px, inherit);
+      margin-left: 30px;
+      top: -10px;
+    }
+
+    &::before {
+      position: absolute;
+      transform: translateY(-50%);
+      display: block;
+      content: '';
+      background-image: url('../../assets/img/Slash.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 16px 4px 0;
+      width: 11.62px;
+      height: 26px;
+
+      @media screen and (min-width: 768px) {
+        width: 21px;
+        height: 47px;
+        margin: 26px 4px 0;
+
+      }
+    }
+
+    &_color-white {
+      color: $main;
+    }
+
+    &_color-dark {
+      color: #FFF;
+    }
+  }
+}

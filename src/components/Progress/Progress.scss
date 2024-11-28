@@ -1,0 +1,30 @@
+@use "../../styles/global" as *;
+
+.progress {
+  border-left: 4px solid #E6E6F0;
+  padding-left: 30px;
+  @media screen and (min-width: 1024px) {
+    width: 388px;
+    margin-left: 30px;
+
+  }
+
+  &__bloc:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    padding: 0 10px 0 5px;
+  }
+
+  &__number {
+    @include font(700, 36px, 44px);
+    @extend %bg-linear-gradient-reversed;
+  }
+
+  &__text {
+    display: block;
+    padding-top: 10px;
+    @include font(400, 16px, 20px, $main);
+  }
+}

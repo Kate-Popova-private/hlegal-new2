@@ -1,0 +1,79 @@
+@use "../../styles/global" as *;
+
+.public-card__wrap {
+  @media screen and (min-width: 1440px) {
+    width: 75%;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 70.833333%;
+  }
+}
+
+.public-card {
+  padding-top: 30px;
+  border-bottom: solid 4px #E6E6F0;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+
+  &__img {
+    border-radius: 12px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+    @media screen and (min-width: 768px) {
+      height: 500px;
+    }
+  }
+
+  &__additionalImg {
+    width: 100%;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+      width: 98.765432%;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 70.796460%;
+    }
+  }
+
+  &__title {
+    @include font(700, 20px, 24px, #323264);
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+      @include font(700, 30px, 37px, #323264);
+    }
+  }
+
+  &__additionalTitle {
+    margin-bottom: 30px;
+    @include font(700, 30px, 36px, #fff);
+    @extend %bg-linear-gradient-reversed;
+    @media screen and (min-width: 768px) {
+      @include font(700, 38px, 46px, #323264);
+    }
+  }
+
+  &__date {
+    display: block;
+
+    @include font(700, 12px, 15px, #B3B3BA);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: solid 4px #E6E6F0;
+  }
+
+  &__paragraph {
+    @include font(400, 16px, 26px, #000);
+    margin-bottom: 30px;
+  }
+}

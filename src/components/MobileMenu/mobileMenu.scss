@@ -1,0 +1,43 @@
+@use "../../styles/global" as *;
+
+.mobile-nav-wrap {
+  background: #363659;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.mobile-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  background: #fff;
+  padding: 12px;
+
+  &__btn-close {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 12px;
+    background: #F5F5FA;
+    padding: 7px 0;
+    @include font(700, 24px, 29px, $regular-blue)
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}

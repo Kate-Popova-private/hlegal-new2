@@ -1,0 +1,147 @@
+@use '../../styles/global'as *;
+
+
+.employee {
+  padding: 30px 0;
+  @media screen and (min-width: 768px) {
+    padding: 60px 0;
+  }
+
+  &__container {
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin: 0 120px;
+    }
+    @media screen and (min-width: 1920px) {
+      margin: 0 220px;
+    }
+  }
+
+  &__desription-wrap {
+    border-top: 4px solid #E6E6F0;
+    margin-top: 30px;
+    padding-top: 30px;
+    @media screen and (min-width: 1024px) {
+      margin-left: 60px;
+      float: left;
+      width: 60.176991%;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 57.407407%;
+    }
+    @media screen and (min-width: 1920px) {
+      width: 57.407407%;
+    }
+  }
+
+  &__img-wrap {
+    display: inline-block;
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1024px) {
+      float: left;
+      height: 61.5890625vh;
+    }
+    @media screen and (min-width: 1440px) {
+      height: 55.521472vh;
+    }
+    @media screen and (min-width: 1920px) {
+      height: 57.142857vh;
+    }
+  }
+
+  &__img {
+    border-radius: 12px;
+    @media screen and (min-width: 768px) {
+      width: 300px;
+      height: 375px;
+      object-fit: cover;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 400px;
+      height: 500px;
+    }
+  }
+
+  &__info-wrap {
+    margin-top: 30px;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      left: 50.925925%;
+      top: 100px;
+      margin: unset;
+    }
+    @media screen and (min-width: 1024px) {
+      position: unset;
+      transform: unset;
+      padding-left: 60px;
+    }
+    @media screen and (min-width: 1440px) {
+      flex-flow: row wrap;
+    }
+  }
+
+  &__name {
+    @include h2-regular-gradient-reversed;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 1440px) {
+      width: 100%;
+    }
+  }
+
+  &__position {
+    display: block;
+    @include font(400, 14px, 22px, #B3B3BA);
+    margin-bottom: 10px;
+    @media screen and (min-width: 1440px) {
+      margin: unset;
+    }
+  }
+
+  &__social {
+    display: block;
+    @include font(400, 16px, 20px, #24A3FF);
+    @media screen and (min-width: 1440px) {
+      &:before {
+        display: inline-block;
+        content: '';
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        background: #E6E6F0;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  &__social:last-child {
+    margin-top: 10px;
+    @media screen and (min-width: 1440px) {
+      margin: unset;
+    }
+  }
+
+  &__desription {
+    @include font(400, 16px, 26px, #000);
+  }
+
+  &__caption {
+    text-transform: uppercase;
+    display: inline-block;
+    @include font(700, 14px, 17px, $main);
+    letter-spacing: 1px;
+    padding: 30px 0 15px;
+  }
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="73fefaed-a2d6-4d19-bda3-f8f459ab5734" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/action/languageAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reducer/languageReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../translate/translate_EN.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../translate/translate_RU.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../translate/translate_UA.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components/Clients.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/Clients.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components/Loader/Loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/../components/Loader/Loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components/publications.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/publications.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/benefits.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/Arrow_right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/Arrow_right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/Loader.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/Loader.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/Publication1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/Publication1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/Publication2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/Publication2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/Publication3.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/Publication3.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/Publication4.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/Publication4.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/Publication5.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/Publication5.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/Scroll.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/Scroll.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/Slash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/Slash.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/Team-1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/Team-1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/benefits1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/benefits1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/benefits2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/benefits2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/benefits3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/benefits3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/benefits4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/benefits4.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/benefits5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/benefits5.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/benefits6.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/benefits6.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/client1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/client1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/client10.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/client10.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/client11.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/client11.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/client12.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/client12.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/client2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/client2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/client3.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/client3.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/client4.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/client4.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/client5.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/client5.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/client6.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/client6.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/client7.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/client7.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/client8.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/client8.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/client9.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/client9.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/facebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/facebook2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/facebook2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/hLogoName_dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/hLogoName_dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/h_logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/h_logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/hamburger.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/hamburger.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/hlegal_name.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/hlegal_name.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/social.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/img/social.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../styles/_breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../styles/_breadcrumbs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../styles/_loader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../styles/_loader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../styles/global.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2PpQtNZLB29EZa3DFovvi7UZClB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/WebStorm/project-store",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73fefaed-a2d6-4d19-bda3-f8f459ab5734" name="Changes" comment="" />
+      <created>1684151756353</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684151756353</updated>
+      <workItem from="1684151757560" duration="24000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,27 @@
+//}
+.card-loader__wrap {
+  padding-bottom: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    width: 47.685185%;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 31.120943%;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 31.818181%;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 32.083125%;
+  }
+
+  &:last-child:nth-child(2n+1) {
+    flex-grow: 1;
+    @media screen and (min-width: 1024px) {
+      flex-grow: 0;
+    }
+  }
+}

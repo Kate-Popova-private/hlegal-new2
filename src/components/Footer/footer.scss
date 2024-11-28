@@ -1,0 +1,94 @@
+@use "../../styles/global" as *;
+.footer {
+  flex: 0 0 auto;
+  background: #F5F5FA;
+  padding: 30px 0;
+  text-align: center;
+  @media screen and (min-width: 1024px) {
+    //padding-top: unset;
+  }
+
+  &__container {
+    border-top: 2px solid #E6E6F0;
+    padding-top: 30px;
+    position: relative;
+  }
+
+  &__state {
+    @include font(400, 16px, 20px, #323264);
+    margin-bottom: 10px;
+  }
+
+  &__social {
+    margin-bottom: 10px;
+  }
+
+  &__phone-number {
+    @include font(700, 16px, 20px, #46466E);
+    margin-bottom: 10px;
+  }
+
+  &__email {
+    @include font(700, 16px, 20px, $regular-blue);
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__state, &__social, &__phone-number {
+    @media screen and (min-width: 768px) {
+      margin-right: 26px;
+      margin-bottom: unset;
+    }
+  }
+
+  &__social::after, &__phone-number::after, &__state::after {
+    position: absolute;
+    top: 50%;
+    margin: 0 10px;
+    transform: translateY(-50%);
+    content: "";
+    display: none;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background: #B3B3BA;
+    text-align: center;
+    vertical-align: center;
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+    }
+  }
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    position: relative;
+  }
+
+  &__link-on-map {
+    @include font(700, 12px, 15px, $regular-blue);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.address + .address {
+  margin-top: 21px;
+}
+
+.copyright {
+  @include font(400, 16px, 20px, #B3B3BA);
+  padding-top: 30px;
+  display: inline-block;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

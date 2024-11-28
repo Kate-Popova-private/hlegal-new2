@@ -1,0 +1,108 @@
+@use "../../styles/global.scss" as * ;
+
+.advantage {
+  padding-bottom: 30px;
+  padding-top: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 90px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    @include large-container-mixin;
+
+  }
+  @media screen and (min-width: 1440px) {
+    padding-right: 120px;
+  }
+
+  &__nav {
+    padding-bottom: 30px;
+    white-space: nowrap;
+    margin-left: 30px;
+
+    @media screen and (min-width: 768px) {
+      padding: 0 0 60px 60px;
+      margin: unset;
+    }
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 0 60px 0 0;
+      width: 48%;
+    }
+  }
+
+  &__nav-item {
+    display: inline-block;
+    @include font(700, 30px, 37px, #B3B3BA);
+    margin-right: 30px;
+
+    &:hover {
+      color: $accent;
+    }
+
+    @media screen and (min-width: 768px) {
+      @include font(700, 38px, 46px);
+
+    }
+    @media screen and (min-width: 1024px) {
+      padding-bottom: 30px;
+      @include font(700, 38px, 46px);
+      margin: unset;
+    }
+  }
+
+  &__nav-item_active {
+    @extend %bg-linear-gradient;
+  }
+
+  &__nav-item:first-child {
+    @extend %bg-linear-gradient;
+  }
+
+  &__content {
+    border-top: 4px solid #6f6f92;
+
+    @media screen and (min-width: 1024px) {
+      border-top: unset;
+      border-left: 4px solid #6f6f92;
+      padding-left: 60px;
+      width: 52%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 61.268%;
+    }
+    @media screen and (min-width: 1920px) {
+      width: 68.55%;
+    }
+  }
+
+
+  &__title {
+    @include font(700, 20px, 24px, #FFF);
+    padding: 30px 0;
+    @media screen and (min-width: 768px) {
+      padding: 60px 0 30px;
+      @include font(700, 30px, 37px, #FFF);
+    }
+    @media screen and (min-width: 1024px) {
+      padding: 0;
+    }
+  }
+
+  &__text {
+    @include font(400, 19px, 30px, #FFF);
+    @media screen and (min-width: 1024px) {
+      padding: 0;
+    }
+  }
+}

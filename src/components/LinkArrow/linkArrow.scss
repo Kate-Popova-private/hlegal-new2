@@ -1,0 +1,25 @@
+@use "../../styles/global" as *;
+
+.link-arrow {
+  @include font(700, 14px, 17px, $regular-blue);
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &::after {
+    content: url("../../assets/img/Arrow_right.svg");
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    margin-left: 2px;
+    transform: translateY(-60%);
+  }
+
+  &:hover {
+    color: $accent;
+  }
+
+  display: block;
+  background: inherit;
+}

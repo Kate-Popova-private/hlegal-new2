@@ -1,0 +1,11 @@
+@use "../../styles/global" as *;
+
+.download-btn {
+  border-radius: 12px;
+  padding: 18px 30px;
+  border: 0;
+  box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+  background: $regular-blue;
+  @include font(700, 16px, 20px, #fff);
+
+}
