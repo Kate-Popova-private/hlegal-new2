@@ -69,8 +69,7 @@ function App() {
                                    crumb: (data) => <Link to="/contact">contact</Link>
                                }}/>
                     </Route>
-                )
-                , {basename: "/"})
+                ))
 
             }/>
             <ModalMessage></ModalMessage>
